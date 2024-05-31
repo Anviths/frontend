@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background:  black;
+    background-size: cover;
+    
+}
+
+.outer {
+
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.inner {
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: grey;
+    display: flex;
+}
+
+.left-logo>h2 {
+    text-align: left;
+    margin: 22px 40px;
+    text-transform: capitalize;
+    color: #ffffff;
+
+}
+
+.left-logo>h2:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.nav-bar ol {
+    width: 100%;
+    height: 70px;
+    margin-left: 200px;
+    display: flex;
+}
+
+.nav-li>li {
+    top: 10px;
+    display: inline;
+    list-style-type: none;
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 15px 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+
+}
+
+.property>h2 {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline green wavy 2px;
+}
+
+.property>p {
+
+    color: rgb(187, 34, 164);
+    text-indent: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+    .links{
+        width: 50%;
+        margin: auto;
+    }
+    .links >a:link{
+        color: red;
+        font-size: 1.5em;
+        padding: 2px;
+        display: block;
+        text-decoration: none;
+        
+    }
+    .links >a:visited{
+        color: blueviolet;
+    }
+    .div a:hover{
+      color: aqua;
+      text-decoration: underline;
+    }
+    .links a:active{
+        color: greenyellow;
+    }
+     
+    table ,tr ,th ,td{
+        border: 2px solid pink ;
+        border-collapse: collapse;
+        
+        color: blue;
+    }

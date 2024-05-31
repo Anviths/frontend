@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   margin-top: 50px;
+}
+.container button{
+    
+    width:105px;
+    margin-bottom: 25px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    
+
+}
+.container label{
+    font-size: 40px;
+}

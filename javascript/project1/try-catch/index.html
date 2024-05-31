@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Enter the number between 20 and 30</p>
+    <input type="text" name="" id="num">
+    <button onclick="check()">Add</button>
+    <p id="out"></p>
+    <script>
+        function check() {
+            const out = document.getElementById("out");
+            out.innerHTML = "";
+            let x = document.getElementById("num").value;
+            try {
+                if (x.trim() === '')
+                    throw "empty";
+                if (isNaN(x))
+                    throw "not a number";
+                  x=Number(x);
+                 if (x < 5)
+                    throw "small";
+                 if (x > 10)
+                    throw "greater"
+            }
+            catch (err) {
+                out.innerHTML = "input is" + err;
+            }
+        }
+    </script>
+</body>
+
+</html>

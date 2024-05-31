@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+     width: 300px;
+    max-height: 400px;
+    margin: 50px;
+}
+.container h1{
+    width: 60%;
+    margin: 10px 120px auto;
+    font-size: 70px;
+}
+.container button{
+ margin: 6px;
+ padding: 8px;
+ text-transform: capitalize;
+ background-color: blue;
+ color: white;
+ font-weight: 800;
+}
