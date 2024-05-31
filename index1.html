@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+      Name:<input type="text" name="name">
+      email:<input type="email" name="email">
+      phone:<input type="tel" name="phone">
+       <button type="button" onclick="submitform()">Submit</button> 
+    </form>
+    <script>
+      async function submitform(){
+        let form=document.getElementById('form');
+        
+        const formData = {
+               
+          
+                name: form.elements.name.value,
+                email: form.elements.email.value,
+                phone: form.elements.phone.value
+            };
+            console.log(formData);
+        const response=await fetch('http://localhost:8080/student',{
+            method:'POST',
+            headers:{
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify( formData),
+        });
+
+      }    
+    </script>
+</body>
+</html>

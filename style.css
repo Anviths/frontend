@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+   top: 50%;
+   position: absolute;
+   width: 35rem;
+   display: flex;
+
+}
+.profile{
+    
+    width: 11rem;
+    height: 12rem;
+}
+
+.top{
+    height: 66%;
+    background-color: rgb(31, 102, 194);
+    border-radius: 4px;
+    
+}
+.top img{
+    margin: 5px 20px;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2.5px solid white;
+
+}
+.top img:hover{
+     width: 4.8rem;
+    border-radius: 50%;
+
+}
+.stat{
+    margin: 0px 10px;
+    font-size: .5em;
+    color: whitesmoke;
+}
+.name{
+    margin: 0px 10px;
+    font-size: 1.4em;
+    color: whitesmoke;
+}
+.bottom{
+    height: 30%;
+    margin-top: -5px;
+    border-radius: 4px;
+    background-color: darkgray;
+}
+.bottom p{
+    font-size: .8em;
+    margin-bottom: 5px;
+    color: grey;
+}
+.bottom p:hover{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: wheat;
+}
+.data{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.datas{
+    background-color: cadetblue;
+    height: 80px;
+    width: 130px;
+    margin: 10px 0px 10px;
+    border: 2px solid;
+    border-radius: 8px;
+    position: relative;
+
+}
+.work{
+    color: white;
+    font-size: 1.1em;
+    margin: 5px 15px;
+}
+.time{
+    color: white;
+    font-size: 1.5rem;
+    margin: 2px 17px;
+    font-weight: bold;
+}
+.week{
+    color: white;
+    font-size: .8rem;
+    margin: 1px 15px;
+}
+.datas::after{
+    content: '';
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -12px;
+    left: 0;
+    border-radius: 5px;
+}
+.datas:hover::after{
+    top: -18px;
+}
+
+.datas:nth-child(1)::after {
+    background-color: rgba(208, 37, 37, 0.866);
+}
+.datas:nth-child(2)::after {
+    background-color: aqua;
+}
+.datas:nth-child(3)::after {
+    background-color: rgb(198, 255, 192);
+}
+.datas:nth-child(4)::after {
+    background-color: pink;
+}
+.datas:nth-child(5)::after {
+    background-color: rgb(215, 12, 205);
+}
+.datas:nth-child(6)::after {
+    background-color: rgb(104, 151, 28);
+}
